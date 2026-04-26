@@ -1,17 +1,3 @@
-> ⚠️ **Important Notice**  
-> The backend and frontend source code are currently not available in this repository due to technical issues encountered during the upload process.  
->  
-> The repository will be updated as soon as these issues are resolved.
-> 
-> ⚠️ **Aviso Importante**  
-> El código fuente del backend y del frontend no se encuentra disponible actualmente en este repositorio debido a inconvenientes técnicos durante el proceso de subida.  
->  
-> El repositorio será actualizado tan pronto como estos inconvenientes sean resueltos.
-
----
-
----
-
 # Course Registration Web Application
 
 ## 📌 General Description
