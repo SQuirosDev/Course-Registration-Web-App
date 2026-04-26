@@ -1,0 +1,15 @@
+# .NET
+bin/
+obj/
+
+# Packages
+packages/
+
+# Visual Studio
+.vs/
+
+# Otros comunes
+node_modules/
+.env
+dist/
+build/

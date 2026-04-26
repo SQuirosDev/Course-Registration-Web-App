@@ -1,0 +1,152 @@
+/* ===== Navbar ===== */
+.navbar {
+  background: #006CB7 !important;
+}
+
+.navbar-brand {
+  color: #FFD700 !important;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 8px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #FFD700 !important;
+}
+
+/* ===== Formularios ===== */
+form .form-label {
+  font-weight: 600;
+  color: #2E2E2E;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 6px;
+}
+
+/* Inputs y Selects */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #00B8D9;
+  box-shadow: 0 0 8px rgba(0, 184, 217, 0.3);
+}
+
+.form-control:hover,
+.form-select:hover {
+  box-shadow: 0 0 6px rgba(0, 184, 217, 0.15);
+}
+
+/* Tarjeta del formulario */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  border: 2px solid #00B8D930;
+  margin-top: 80px; /* 👈 baja la tarjeta */
+}
+
+.card h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #006CB7;
+  margin-bottom: 20px;
+}
+
+/* Texto pequeño de privacidad */
+form p.small {
+  color: #6C757D;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* Botón del formulario */
+form button {
+  border-radius: 8px;
+  background-color: #006CB7 !important;
+  border: none;
+  border-color: transparent !important;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-family: 'Orbitron', sans-serif;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005592 !important;
+  color: white !important;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+/* ===== Hero Formulario ===== */
+.hero-form {
+  min-height: 400vh; /* cubre toda la pantalla */
+  background: linear-gradient(135deg, #00B8D9 0%, #F8F9FA 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+/* Asegurar que la tarjeta del formulario destaque */
+.hero-form .card {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border: 2px solid #00B8D930;
+}
+
+/* ===== Información adicional debajo ===== */
+.info-below {
+  background-color: #F8F9FA;
+  border-top: 4px solid #00B8D9;
+  border-bottom: 4px solid #FFD700;
+}
+
+.info-below h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00B8D9;
+}
+
+.info-below p {
+  font-family: 'Roboto', sans-serif;
+  color: #2E2E2E;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+footer {
+  border-top: 4px solid #FFD700;
+  background-color: #006CB7;
+}
+
+footer a{
+  color: #FFD700 !important;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #caac00 !important;
+}
+
+a, .btn, .nav-link {
+  transition: all 0.3s ease;
+}
+
+.btn:hover, .nav-link:hover {
+  cursor: pointer;
+}

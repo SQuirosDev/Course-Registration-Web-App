@@ -1,0 +1,190 @@
+/* ===== Tipografía ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* ===== General ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F4F6F9;
+  color: #1E1E1E;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background: #006CB7 !important;
+}
+
+.navbar-brand {
+  color: #FFD700 !important;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 8px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #FFD700 !important;
+}
+
+/* ===== Hero ===== */
+.hero-info {
+  height: 100vh;
+  background: linear-gradient(135deg, #FFD700, #006CB7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero-info h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+}
+
+.hero-info p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== Secciones ===== */
+.full-section {
+  min-height: 100vh;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  border-top: 4px solid #FFD700;
+}
+
+.full-section:nth-child(even) {
+  background-color: #fff;
+}
+
+.full-section:nth-child(odd) {
+  background-color: #F4F6F9;
+}
+
+.full-section h2 {
+  color: #006CB7;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.personal{
+  min-height: 466px;
+}
+
+.card h5{
+  color: #006CB7
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== Botones ===== */
+button, .btn {
+  background-color: #FFD700;
+  border: none;
+  color: #1E1E1E;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover, .btn:hover {
+  background-color: #34C759;
+  transform: scale(1.05);
+}
+
+/* ====== Animación FAQ ====== */
+.accordion-button {
+  transition: all 0.3s ease;
+  background-color: #ffffff; /* color base claro */
+  border: none;
+  font-weight: 500;
+}
+
+.accordion-button:hover {
+  background-color: #fdf993; /* un verde muy sutil */
+  transform: translateY(-2px); /* ligero levantamiento */
+  box-shadow: 0 4px 10px rgba(244, 223, 152, 0.1); /* sombra suave */
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(44, 184, 119, 0.3); /* aro verde Bootstrap */
+}
+
+.accordion-item {
+  border: none; /* limpio */
+  margin-bottom: 10px;
+  border-radius: 12px; /* esquinas suaves */
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* sutil */
+  transition: box-shadow 0.3s ease;
+}
+
+.accordion-item:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-body {
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* ===== Footer ===== */
+footer {
+  border-top: 4px solid #FFD700;
+  background-color: #006CB7;
+}
+
+footer a{
+  color: #FFD700 !important;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #caac00 !important;
+}
+
+.hero-info {
+  position: relative;
+  overflow: hidden;
+  transition: background 0.2s ease;
+}
+
+footer {
+  border-top: 4px solid #FFD700;
+  background-color: #006CB7;
+}

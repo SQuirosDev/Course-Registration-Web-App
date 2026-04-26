@@ -1,0 +1,49 @@
+@{
+    ViewBag.Title = "RoboTico";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS desde CDN -->
+        <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet">
+
+        <!-- CSS propio -->
+        <link rel="stylesheet" href="~/styles/style.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="~/img/Logo RoboTico 4.png" type="image/png">
+
+        <title>@ViewBag.Title</title>
+    </head>
+    <body class="bg-light">
+
+        <!-- Hero -->
+        <section id="hero" class="hero text-center text-white d-flex align-items-center justify-content-center" style="margin-top: 70px;">
+            <div class="container">
+                <h1 class="display-5 fw-bold">Inscripciones Abiertas</h1>
+                <p class="lead">Explora el mundo de la robótica con LEGO y aprende mientras construyes.</p>
+                <a href="@Url.Action("Inscripciones", "Home")" class="btn btn-light btn-lg fw-bold">¡Quiero inscribirme!</a>
+            </div>
+        </section>
+
+        <!-- Info breve debajo -->
+        <section class="info-below text-center py-5">
+            <div class="container">
+                <h2 class="fw-bold">¿Por qué unirse?</h2>
+                <p class="text-muted mx-auto" style="max-width: 700px;">
+                    Nuestro curso de Robótica LEGO fomenta la creatividad, el trabajo en equipo y el pensamiento lógico a través de actividades prácticas y divertidas.
+                </p>
+                <a href="@Url.Action("Info", "Home")" class="btn btn-blue btn-lg fw-bold">Más Información</a>
+            </div>
+        </section>
+
+        <!-- Scripts -->
+        <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+        <script src="~/Scripts/indexCromatic.js"></script>
+
+    </body>
+</html>

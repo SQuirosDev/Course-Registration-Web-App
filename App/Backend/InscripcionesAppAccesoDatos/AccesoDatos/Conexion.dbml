@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="INSCRIPCIONES_APP_BD" Class="ConexionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CompuSebas\SQLEXPRESS;Initial Catalog=INSCRIPCIONES_APP_BD;Integrated Security=True;Encrypt=False" SettingsObjectName="InscripcionesAppAccesoDatos.Properties.Settings" SettingsPropertyName="INSCRIPCIONES_APP_BDConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.PS_GET_INSCRIPCIONES" Method="PS_GET_INSCRIPCIONES">
+    <Parameter Name="RESULTADO" Parameter="rESULTADO" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Parameter Name="LISTA_ACIERTOS" Parameter="lISTA_ACIERTOS" Type="System.String" DbType="NVarChar(MAX)" Direction="InOut" />
+    <Parameter Name="LISTA_ERRORES" Parameter="lISTA_ERRORES" Type="System.String" DbType="NVarChar(MAX)" Direction="InOut" />
+    <Parameter Name="REGISTRO_ID" Parameter="rEGISTRO_ID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ERROR_ID" Parameter="eRROR_ID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="PS_GET_INSCRIPCIONESResult">
+      <Column Name="INSCRIPCION_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="APELLIDO_1" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="APELLIDO_2" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="GRADO" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SECCION" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CORREO" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="FECHA_REGISTRO" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CONFIRMADO" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.PS_GET_CORREOS" Method="PS_GET_CORREOS">
+    <Parameter Name="RESULTADO" Parameter="rESULTADO" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Parameter Name="LISTA_ACIERTOS" Parameter="lISTA_ACIERTOS" Type="System.String" DbType="NVarChar(MAX)" Direction="InOut" />
+    <Parameter Name="LISTA_ERRORES" Parameter="lISTA_ERRORES" Type="System.String" DbType="NVarChar(MAX)" Direction="InOut" />
+    <Parameter Name="REGISTRO_ID" Parameter="rEGISTRO_ID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ERROR_ID" Parameter="eRROR_ID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <ElementType Name="PS_GET_CORREOSResult">
+      <Column Name="CORREO_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CORREO" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.PS_INSERT_INSCRIPCION" Method="PS_INSERT_INSCRIPCION">
+    <Parameter Name="NOMBRE" Parameter="nOMBRE" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="APELLIDO_1" Parameter="aPELLIDO_1" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="APELLIDO_2" Parameter="aPELLIDO_2" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="GRADO" Parameter="gRADO" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="SECCION" Parameter="sECCION" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="CORREO" Parameter="cORREO" Type="System.String" DbType="NVarChar(250)" />
+    <Parameter Name="CONFIRMADO" Parameter="cONFIRMADO" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="RESULTADO" Parameter="rESULTADO" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Parameter Name="LISTA_ACIERTOS" Parameter="lISTA_ACIERTOS" Type="System.String" DbType="NVarChar(MAX)" Direction="InOut" />
+    <Parameter Name="LISTA_ERRORES" Parameter="lISTA_ERRORES" Type="System.String" DbType="NVarChar(MAX)" Direction="InOut" />
+    <Parameter Name="REGISTRO_ID" Parameter="rEGISTRO_ID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ERROR_ID" Parameter="eRROR_ID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

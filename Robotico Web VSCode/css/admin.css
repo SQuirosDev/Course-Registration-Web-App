@@ -1,0 +1,141 @@
+/* ===== Navbar ===== */
+.navbar {
+  background: #006CB7 !important;
+}
+
+.navbar-brand {
+  color: #FFD700 !important;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 8px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #FFD700 !important;
+}
+
+/* ===== Formulario Admin ===== */
+/* ===== Contenedor Admin ===== */
+.admin-container {
+  min-height: 80vh; /* Ocupa la mayor parte de la pantalla */
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center;     /* Centrado vertical */
+  padding: 20px;           /* Espacio alrededor */
+  background-color: #F4F6F9; /* Fondo suave */
+}
+
+/* Ajuste de la card dentro del contenedor */
+.admin-container .card {
+  max-width: 400px;
+  width: 100%;
+}
+
+.admin-container h2{
+  color: #006CB7 !important;
+}
+
+
+/* Input contraseña */
+#password {
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+}
+
+#password:focus {
+  border-color: #FFD700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+}
+
+/* Botón Admin */
+form button {
+  border-radius: 8px;
+  background-color: #006CB7 !important;
+  color: white !important;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005592 !important;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
+  transform: translateY(-2px) scale(1.03);
+}
+/* ===== Modal Contraseña ===== */
+#passwordModal .modal-content {
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+#passwordModal .modal-header {
+  background-color: #00B8D9;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+#passwordModal .modal-body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #2E2E2E;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+#passwordModal .modal-footer .btn {
+  border-radius: 8px;
+  background-color: #00B8D9;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+#passwordModal .modal-footer .btn:hover {
+  background-color: #FFD700;
+  color: #2E2E2E !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+  border-top: 4px solid #FFD700;
+  background-color: #006CB7;
+}
+
+footer a{
+  color: #FFD700 !important;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #caac00 !important;
+}
+
+/* ===== Animaciones ===== */
+a, .btn, .nav-link {
+  transition: all 0.3s ease;
+}
+
+.btn:hover, .nav-link:hover {
+  cursor: pointer;
+}

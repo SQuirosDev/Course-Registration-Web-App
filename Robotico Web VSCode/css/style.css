@@ -1,0 +1,207 @@
+/* ===== Estilo general ===== */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F8F9FA;
+  color: #2E2E2E;
+  line-height: 1.6;
+}
+
+/* Títulos y botones con fuente futurista */
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.btn {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+
+/* ===== Navbar ===== */
+.navbar {
+  background: #006CB7 !important;
+}
+
+.navbar-brand {
+  color: #FFD700 !important;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 8px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #FFD700 !important;
+}
+/* ===== Hero Section ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  text-align: center;
+  /* Fondo inicial */
+  background: radial-gradient(circle at 50% 50%, #34C759 0%, #006CB7 70%, #1E1E1E 100%);
+  transition: background 0.2s ease; /* Suaviza el movimiento */
+}
+
+section.bg-info {
+  background-color: #00B8D9 !important;
+  border-bottom: 5px solid #FFD700;
+}
+
+section.bg-info h1 {
+  font-size: 2.8rem;
+  text-shadow: 2px 2px #2E2E2E20;
+}
+
+section.bg-info p {
+  font-size: 1.2rem;
+}
+
+section h2{
+  color: #006CB7 !important;
+}
+
+
+
+/* ===== Botones ===== */
+.btn {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-lg {
+  padding: 12px 28px;
+}
+
+.btn-info {
+  background-color: #00B8D9;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: #FFD700;
+  color: #2E2E2E;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+
+.btn-light:hover {
+  background-color: #FFD700;
+  color: white !important;
+  transform: translateY(-2px);
+}
+
+.btn-blue {
+  background-color: #006CB7;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #005592;
+  color: White;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+
+/* ===== Tarjetas / secciones ===== */
+.card, section.container {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 20px;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #2E2E2E;
+}
+
+/* ===== Animaciones ===== */
+a, .btn, .nav-link {
+  transition: all 0.3s ease;
+}
+
+.btn:hover, .nav-link:hover {
+  cursor: pointer;
+}
+/* ===== Hero Principal ===== */
+.hero {
+  min-height: 100vh; /* Ocupa toda la pantalla */
+  background: linear-gradient(135deg, #00B8D9 0%, #F8F9FA 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; /* margen lateral en móviles */
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #2E2E2E20;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+/* Botón grande del hero */
+.hero .btn {
+  font-size: 1.3rem;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.hero .btn:hover {
+  background-color: #FFD700;
+  color: #2E2E2E !important;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* ===== Información debajo del hero ===== */
+.info-below {
+  background-color: #F8F9FA;
+  border-top: 4px solid #FFD700;
+  padding: 60px 20px;
+}
+
+.info-below h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00B8D9;
+  margin-bottom: 20px;
+}
+
+.info-below p {
+  font-family: 'Roboto', sans-serif;
+  color: #2E2E2E;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+footer {
+  border-top: 4px solid #FFD700;
+  background-color: #006CB7;
+}
+
+footer a{
+  color: #FFD700 !important;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #caac00 !important;
+}

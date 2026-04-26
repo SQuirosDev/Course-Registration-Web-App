@@ -1,0 +1,94 @@
+@model RoboTico.Modelos.ViewModels.AdminVM
+@{
+    ViewBag.Title = "RoboTico - Admin";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title</title>
+
+        <!-- Bootstrap CSS completo -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- CSS propio -->
+        <link rel="stylesheet" href="~/styles/admin.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="~/img/Logo RoboTico 4.png" type="image/png">
+    </head>
+    <body class="bg-light">
+
+        <!-- Formulario Admin -->
+        <div class="admin-container mt-5 pt-5">
+            <div class="card shadow rounded-4 mx-auto" style="max-width: 400px;">
+                <div class="card-body p-4">
+                    <h2 class="h5 text-center mb-4 fw-bold">Acceso Administrativo</h2>
+
+                    <!-- Mostrar Aciertos -->
+                    @if (Model.ListaAciertos != null && Model.ListaAciertos.Any())
+                    {
+                        <div class="alert alert-success">
+                            <ul class="mb-0">
+                                @foreach (var acierto in Model.ListaAciertos)
+                                {
+                                    <li>@acierto</li>
+                                }
+                            </ul>
+                        </div>
+                    }
+
+                    <!-- Mostrar Errores -->
+                    @if (Model.ListaErrores != null && Model.ListaErrores.Any())
+                    {
+                        <div class="alert alert-danger">
+                            <ul class="mb-0">
+                                @foreach (var error in Model.ListaErrores)
+                                {
+                                    <li>@error</li>
+                                }
+                            </ul>
+                        </div>
+                    }
+
+                    @using (Html.BeginForm("Admin", "Home", FormMethod.Post, new { id = "adminForm" }))
+                    {
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.Contrasena, "Contraseña*", new { @class = "form-label fw-bold" })
+                            @Html.PasswordFor(m => m.Contrasena, new { @class = "form-control", required = "required" })
+                        </div>
+
+                        <button type="submit" class="btn btn-info text-white w-100 fw-bold">
+                            Generar Excel
+                        </button>
+                    }
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Confirmacion de Contraseña Admin -->
+        <div class="modal fade" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-4 shadow">
+                    <div class="modal-header bg-info text-white">
+                        <h5 class="modal-title" id="passwordModalLabel">Resultado</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="modalMessage">Aquí se mostrará si la contraseña es correcta o no.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info w-100 fw-bold" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
